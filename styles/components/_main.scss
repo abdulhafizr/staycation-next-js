@@ -1,0 +1,72 @@
+@use '../utilities/variables' as var;
+
+.hero {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var.$primary-font;
+    
+    &__caption {
+        &-title {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            color: #152C5B;
+        }
+        &-description {
+            margin: 20px 0 30px;
+            width: 335px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 170%;
+            color: #B0B0B0;
+        }
+    }
+    &__banner {
+        position: relative;
+        z-index: var.$z-backward;
+        margin-right: 47.41px;
+        
+        &-image {
+            border-radius: 100px 15px 15px 15px;
+        }
+        &::after {
+            position: absolute;
+            z-index: var.$z-hidden;
+            content: '';
+            display: table;
+            height: 398.25px;
+            width: 452.59px;
+            border-radius: 100px 15px 15px 15px;
+            border: 2px solid var.$border-primary;
+            top: 51.75px;
+            left: 47.41px;
+        }
+    }
+
+    .infomation {
+        margin-top: 82px;
+        display: flex;
+        &__item {
+            margin-right: 20px;
+
+            &-label {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 170%;
+                color: var.$secondary-color;
+                span {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 170%;
+                    color: var.$text-gray-200;
+                }
+            }
+        }
+    }
+}

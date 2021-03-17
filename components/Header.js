@@ -5,7 +5,7 @@ export default function Header() {
     const router = useRouter()
     return (
         <header className={styles['l-header']}>
-            <nav className={styles['nav']}>
+            <nav className={`${styles['nav']} container`}>
                 <div>
                     <h1 className={styles['nav__brand']}>Stay<span>cation.</span></h1>
                 </div>

@@ -6,15 +6,16 @@
     left: 0;
     width: 100%;
     border-bottom: 1px solid var.$border-primary;
+    z-index: var.$z-forward;
 }
 
 .nav {
-    padding: 0 130px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var.$primary-font;
+    background-color: var.$white-color;
 
     &__brand {
         font-style: normal;
@@ -44,5 +45,9 @@
         line-height: 24px;
         color: var.$secondary-color;
         text-decoration: none;
+
+        &:hover {
+            color: var.$primary-color;
+        }
     }
 }

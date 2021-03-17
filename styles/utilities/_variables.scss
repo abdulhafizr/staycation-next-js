@@ -7,11 +7,12 @@ $primary-font: 'Poppins', sans-serif;
 $primary-color: #3252DF;
 $secondary-color: #152C5B;
 $third-color: #FF498B;
+$white-color: #FFFFFF;
 
 // Text Colors
 $text-primary: $primary-color;
 $text-secondary: $secondary-color;
-$text-white: #FFFFFF;
+$text-white: $white-color;
 $text-gray-100: #E5E5E5;
 $text-gray-200: #B0B0B0;
 $text-orange: #E74C3C;
@@ -19,3 +20,7 @@ $text-green: #1ABC9C;
 
 // Border Colors
 $border-primary: $text-gray-100;
+
+$z-forward: 100;
+$z-backward: 10;
+$z-hidden: -10;

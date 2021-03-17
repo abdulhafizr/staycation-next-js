@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import {Header} from '../components'
+import styles from '../styles/Home.module.scss'
+import {Header, Hero} from '../components'
 
 export default function Home() {
   return (
@@ -10,6 +11,12 @@ export default function Home() {
       </Head>
 
       <Header />
+
+      <main className="container">
+        <Hero />
+
+      </main>
+
     </div>
   )
 }

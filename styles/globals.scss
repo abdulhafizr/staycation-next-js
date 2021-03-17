@@ -54,6 +54,34 @@ html {
 }
 
 .active {
-	color: var.$primary-color;
+	color: var.$primary-color!important;
+}
+
+.container {
+	padding: 0 130px;
+}
+
+.btn {
+	font-family: var.$primary-color;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 170%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 10px 40px;
+	background-color: var.$primary-color;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.shadow {
+	box-shadow: 0 5px 10px 1px rgba(50, 82, 223, .3);
+	transition: box-shadow .3s;
+	
+	&:hover {
+		box-shadow: 0 10px 10px 1px rgba(50, 82, 223, .3);
+	}
 }
 
