@@ -1,4 +1,5 @@
 import Header from './Header'
 import Hero from './Hero'
+import MostPick from './MostPick'
 
-export {Header, Hero}
+export {Header, Hero, MostPick}

@@ -43,11 +43,8 @@ export default function Hero() {
                 </div>
             </div>
             <div className={styles['hero__banner']}>
-                <Image 
+                <img 
                     src="/ilustrations/hero.png"
-                    height="410.63px"
-                    width="465.12px"
-                    objectFit="cover"
                     className={styles['hero__banner-image']}
                 />
             </div>

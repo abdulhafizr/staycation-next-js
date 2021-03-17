@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
-import {Header, Hero} from '../components'
+import {Header, Hero, MostPick} from '../components'
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
 
       <main className="container">
         <Hero />
-
+        <MostPick />
       </main>
 
     </div>
