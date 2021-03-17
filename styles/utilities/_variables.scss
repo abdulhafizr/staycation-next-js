@@ -1,3 +1,5 @@
+@use 'fonts';
+
 // Fonts Variables
 $primary-font: 'Poppins', sans-serif;
 
@@ -7,10 +9,13 @@ $secondary-color: #152C5B;
 $third-color: #FF498B;
 
 // Text Colors
-$text-primary: #3252DF;
-$text-secondary: #152C5B;
+$text-primary: $primary-color;
+$text-secondary: $secondary-color;
 $text-white: #FFFFFF;
 $text-gray-100: #E5E5E5;
 $text-gray-200: #B0B0B0;
 $text-orange: #E74C3C;
 $text-green: #1ABC9C;
+
+// Border Colors
+$border-primary: $text-gray-100;
