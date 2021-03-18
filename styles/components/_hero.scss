@@ -35,7 +35,11 @@
             height: 410.63px;
             width: 465.12px;
             object-fit: cover;
+            transition: transform .3s ease;
 
+            &:hover {
+                transform: translate(15px, 15px);
+            }
         }
         &::after {
             position: absolute;

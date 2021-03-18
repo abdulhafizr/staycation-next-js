@@ -23,6 +23,14 @@
             border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
+            
+            img {
+                transition: transform .3s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.08);
+            }
 
             &-badge {
                 position: absolute;
