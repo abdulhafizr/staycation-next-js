@@ -7,9 +7,13 @@ export default function List({title, data}) {
             <div className="list__gallery">
                 {
                     (data !== undefined) && (
-                        data.map((list) => (
-                            <div className="list__gallery-item">
-                                <span className="list__gallery-badge">Popular Choice</span>
+                        data.map((list, index) => (
+                            <div className="list__gallery-item" key={index}>
+                                {
+                                    (list.popularChoice) && (
+                                        <span className="list__gallery-badge">Popular Choice</span>
+                                    )
+                                }
                                 <div className="list__gallery-image">
                                     <Image 
                                         src={`/dummys/${list.photo}`}

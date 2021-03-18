@@ -30,9 +30,20 @@ export default function Home() {
         <MostPick 
           mostPicked={homeData.mostPicked}
         />
+        {/* Houses */}
         <List 
           title="Houses with beauty backyard"
           data={homeData.houses}
+        />
+        {/* Hotels */}
+        <List 
+          title="Hotels with large living room"
+          data={homeData.hotels}
+        />
+        {/* Apartments */}
+        <List 
+          title="Apartments with kitchen set"
+          data={homeData.apartments}
         />
       </main>
 
