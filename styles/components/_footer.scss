@@ -1,0 +1,74 @@
+@use '../utilities/variables' as var;
+
+.footer {
+    border-top: 1px solid var.$border-primary;
+    padding: 50px 130px;
+    font-family: var.$primary-font;
+
+    &__brand {
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 39px;
+            color: var.$primary-color;
+            cursor: pointer;
+    
+            span {
+                color: var.$secondary-color;
+            }
+        }
+        p {
+            margin-top: 8px;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: var.$text-secondary;
+    }
+    &__item {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var.$text-gray-200;
+        margin: 4px 0;
+        max-width: 258px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__brand {
+        margin-right: 80px;
+    }
+    &__a, &__b, &__c {
+        margin-right: 40px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__item-wrapper {
+            margin-top: 16px;
+    }
+    &__bottom {
+        margin-top: 50px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var.$text-gray-200;
+    }
+}
