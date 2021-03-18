@@ -1,7 +1,17 @@
+import {useEffect, useState} from 'react'
 import Head from 'next/head'
-import {Header, Hero, House, MostPick} from '../components'
+import {Header, Hero, List, MostPick} from '../components'
 
 export default function Home() {
+  
+  const [homeData, setHomeData] = useState({})
+
+  useEffect(() => {
+    fetch('http://localhost:3000/api')
+      .then((response) => response.json())
+      .then((response) => setHomeData(response.data))
+  }, [])
+
   return (
     <div>
       <Head>
@@ -12,9 +22,18 @@ export default function Home() {
       <Header />
 
       <main className="container">
-        <Hero />
-        <MostPick />
-        <House />
+        <Hero 
+          travelers={homeData.travelers}
+          treasure={homeData.treasure}
+          cities={homeData.cities}
+        />
+        <MostPick 
+          mostPicked={homeData.mostPicked}
+        />
+        <List 
+          title="Houses with beauty backyard"
+          data={homeData.houses}
+        />
       </main>
 
     </div>

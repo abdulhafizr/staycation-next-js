@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
-export default function Hero() {
+export default function Hero({travelers, treasure, cities}) {
     return (
         <div className={`${styles.hero}`}>
             <div className={styles['hero__caption']}>
@@ -18,7 +18,7 @@ export default function Hero() {
                             objectFit="contain"
                             className={styles['infomation__item-icon']}
                         />
-                        <p className={styles['infomation__item-label']}>80,409 <span>travelers</span></p>
+                        <p className={styles['infomation__item-label']}>{travelers} <span>travelers</span></p>
                     </div>
                     <div className={styles['infomation__item']}>
                         <Image 
@@ -28,7 +28,7 @@ export default function Hero() {
                             objectFit="contain"
                             className={styles['infomation__item-icon']}
                         />
-                        <p className={styles['infomation__item-label']}>862 <span>treasure</span></p>
+                        <p className={styles['infomation__item-label']}>{treasure} <span>treasure</span></p>
                     </div>
                     <div className={styles['infomation__item']}>
                         <Image 
@@ -38,7 +38,7 @@ export default function Hero() {
                             objectFit="contain"
                             className={styles['infomation__item-icon']}
                         />
-                        <p className={styles['infomation__item-label']}>1,492 <span>cities</span></p>
+                        <p className={styles['infomation__item-label']}>{cities} <span>cities</span></p>
                     </div>
                 </div>
             </div>
