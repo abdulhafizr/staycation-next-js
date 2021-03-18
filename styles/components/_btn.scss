@@ -1,0 +1,16 @@
+@use '../utilities/variables' as var;
+
+.btn {
+	font-family: var.$primary-font;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 170%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 10px 40px;
+	background-color: var.$primary-color;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
