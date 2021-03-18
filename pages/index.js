@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import Head from 'next/head'
-import {Header, Hero, List, MostPick, Testimonial} from '../components'
+import {Header, Hero, List, MostPick, Testimonial, Footer} from '../components'
 
 export default function Home() {
   
@@ -51,6 +51,8 @@ export default function Home() {
           testimonial={homeData.testimonial}
         />
       </main>
+
+      <Footer />
 
     </div>
   )
