@@ -1,6 +1,10 @@
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 export default function MostPick({mostPicked}) {
+    
+    const router = useRouter()
+
     return (
         <div className="mostpick">
             <h1 className="mostpick__title">Most Picked</h1>
@@ -9,7 +13,11 @@ export default function MostPick({mostPicked}) {
                 {
                     (mostPicked !== undefined) && (
                         mostPicked.map((mostpick, index) => (
-                            <div className="mostpick__gallery-item" key={index}>
+                            <div 
+                                key={index}
+                                onClick={() => router.push(`/${mostpick.type}/${mostpick.name}`)}
+                                className="mostpick__gallery-item" 
+                            >
                                 <span className="mostpick__gallery-item-badge">${mostpick.price} per night</span>
                                 <Image 
                                     src={`/dummys/${mostpick.photo}`}

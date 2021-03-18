@@ -1,7 +1,7 @@
 @use '../utilities/variables' as var;
 
 .hero {
-    margin-top: 130px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     font-family: var.$primary-font;

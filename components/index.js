@@ -3,6 +3,7 @@ import Hero from './Hero'
 import List from './List'
 import MostPick from './MostPick'
 import Testimonial from './Testimonial'
+import Navigation from './Navigation'
 import Footer from './Footer'
 
-export {Header, Hero, List, MostPick, Testimonial, Footer}
+export {Header, Hero, List, MostPick, Testimonial, Navigation, Footer}

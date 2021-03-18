@@ -1,0 +1,43 @@
+@use '../utilities/variables' as var;
+
+.navigation {
+    margin: 130px 0;
+    font-family: var.$primary-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        text-align: center;
+        &-name {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            text-align: center;
+            color: var.$text-secondary;
+        }
+        &-location {
+            margin-top: 4px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: var.$text-gray-200;
+        }
+    }
+}
+
+.path {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #B0B0B0;
+
+    span {
+        color: var.$text-secondary;
+        font-weight: 500;
+    }
+}
