@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {Header, Hero, MostPick} from '../components'
+import {Header, Hero, House, MostPick} from '../components'
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <main className="container">
         <Hero />
         <MostPick />
+        <House />
       </main>
 
     </div>
