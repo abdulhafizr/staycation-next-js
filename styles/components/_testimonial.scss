@@ -1,0 +1,66 @@
+@use '../utilities/variables' as var;
+
+.testimonial {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    
+    &__photo {
+        position: relative;
+        z-index: var.$z-middle;
+        overflow: visible;
+        padding: 30px 0 0 30px;
+        width: 340.68px;
+        margin-right: 59.11px;
+        
+        &-item {
+            z-index: var.$z-middle;
+            width: 340.68px;
+            height: 501.88px;
+            border-radius: 15px 15px 100px 15px;
+            object-fit: cover;
+        }
+
+        &::after {
+            position: absolute;
+            z-index: var.$z-hidden;
+            content: '';
+            display: table;
+            border-radius: 15px 15px 100px 15px;
+            border: 2px solid var.$border-primary;
+            top: 0;
+            left: 0;
+            height: 486.75px;
+            width: 331.51px;
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: var.$secondary-color;
+    }
+    &__rate {
+        margin-top: 40px;
+        display: flex;
+    }
+    &__message {
+        margin: 8px 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 39px;
+        color: var.$secondary-color;
+        max-width: 493px;
+    }
+    &__name {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: var.$text-gray-200;
+        margin-bottom: 50px;
+    }
+}

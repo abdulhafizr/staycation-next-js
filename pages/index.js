@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import Head from 'next/head'
-import {Header, Hero, List, MostPick} from '../components'
+import {Header, Hero, List, MostPick, Testimonial} from '../components'
 
 export default function Home() {
   
@@ -30,6 +30,7 @@ export default function Home() {
         <MostPick 
           mostPicked={homeData.mostPicked}
         />
+
         {/* Houses */}
         <List 
           title="Houses with beauty backyard"
@@ -44,6 +45,10 @@ export default function Home() {
         <List 
           title="Apartments with kitchen set"
           data={homeData.apartments}
+        />
+
+        <Testimonial 
+          testimonial={homeData.testimonial}
         />
       </main>
 
