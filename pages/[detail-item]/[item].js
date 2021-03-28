@@ -10,7 +10,7 @@ export default function Item() {
     return (
         <div>
             <Head>
-                <title>{route['detail-item'].toUpperCase()} | {route.item}</title>
+                <title>{route['detail-item']} | {route.item}</title>
             </Head>
 
             <Header />

@@ -15,7 +15,7 @@ export default function MostPick({mostPicked}) {
                         mostPicked.map((mostpick, index) => (
                             <div 
                                 key={index}
-                                onClick={() => router.push(`/${mostpick.type}/${mostpick.name}`)}
+                                onClick={() => router.push(`/${mostpick.type || "null"}/${mostpick.name || "null"}`)}
                                 className="mostpick__gallery-item" 
                             >
                                 <span className="mostpick__gallery-item-badge">${mostpick.price} per night</span>
