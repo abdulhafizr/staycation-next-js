@@ -7,7 +7,7 @@ export default function Home() {
   const [homeData, setHomeData] = useState({})
 
   useEffect(() => {
-    fetch('http://localhost:3000/api')
+    fetch('https://staycation-next-js-bqwjvq03p-abdulhafizr.vercel.app/api')
       .then((response) => response.json())
       .then((response) => setHomeData(response.data))
   }, [])
