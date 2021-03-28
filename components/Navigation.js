@@ -10,7 +10,7 @@ export default function Navigation() {
                 <p className="navigation__item-location">Bogor, Indonesia</p>
             </div>
 
-            <div></div>
+            <div className="navigation__breadcrumb"></div>
         </div>
     )
 }

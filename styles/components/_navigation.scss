@@ -1,13 +1,14 @@
 @use '../utilities/variables' as var;
 
 .navigation {
-    margin: 130px 0;
+    margin: 130px 0 50px;
     font-family: var.$primary-font;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__item {
+        flex: 1;
         text-align: center;
         &-name {
             font-style: normal;
@@ -26,6 +27,9 @@
             text-align: center;
             color: var.$text-gray-200;
         }
+    }
+    &__breadcrumb {
+        flex: 1;
     }
 }
 

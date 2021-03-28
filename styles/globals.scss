@@ -1,5 +1,6 @@
 @use 'utilities/variables' as var;
-@use 'Home.module.scss';
+@use 'home';
+@use 'detail';
 @use 'components/btn';
 @use 'components/shadow';
 

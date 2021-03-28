@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {useRouter} from'next/router'
-import {Navigation, Header} from'../../components'
+import {Navigation, Detail, Header} from'../../components'
 
 export default function Item() {
     
@@ -17,6 +17,7 @@ export default function Item() {
 
             <main className="container">
                 <Navigation />
+                <Detail />
             </main>
 
         </div>
